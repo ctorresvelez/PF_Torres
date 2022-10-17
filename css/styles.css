@@ -1,0 +1,389 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,400;1,400&display=swap');
+
+/* Variables */
+
+:root{
+    /* Palette */
+    --backgroundDark:#0A122A;
+    --backgroundLight: #1768AC;
+    --backgroundLive: #48A9A6;
+    --backgroundEmpty: #E7DECD;
+    /* Font Size */
+    --textHeading1: 4.8em;
+    --textHeading2: 3.6em;
+    --textHeading3456: 3.0em;
+    --textHeading7: 1.0em;
+    --textLinks:2.0em;
+    --textText:1.6em;
+    --textSText: .8em;
+    --textCaption:1.4em;
+    --textSCaption:.8em;
+    /* Spacing */
+    --spXl:12rem;
+    --spL:8rem;
+    --spM:5rem;
+    --spS:3.2rem;
+    --spXs:1.0rem;
+    --spXxs:0.5rem;
+}
+
+/*Normalize*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size:var(--textText)
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    font-size: var(textHeading3456);
+    text-decoration: none;
+ 
+}
+
+
+.navbar{
+    background-color: var(--backgroundDark);
+    padding: var(--spXs) var(--spXs) 0px var(--spXs);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.navbar__link{
+    animation: appear .5s ease-in-out;
+    padding: 0 0 5px 0;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .menu .menu__item {
+    display: flex;
+    padding: var(--spXs) var(--spXs) 0px var(--spXs);
+    animation: appear .5s ease-in-out;
+}
+
+.navbar .menu .menu__link {
+    color: var(--backgroundEmpty);
+    font-size: var(--textLinks);
+    transition: all 0.4s ease-in-out;
+    margin: var(--spXs);
+    padding: var(--spXs);
+}
+
+.navbar .menu .menu__link:hover{
+    background-color: var(--backgroundEmpty);
+    color: var(--backgroundDark);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.descripcion{
+    padding: var(--spS);
+}
+
+.descripcion__item {
+    transition: all 2s;
+}
+
+.descripcion__item:hover {
+    background-color: #48A9A6;
+    translate: 25px;
+}
+
+.descripcion .descripcion__item .descripcion__item__titulo {
+    font-size: var(--textText);
+    padding: var(--spXs);
+}
+.descripcion .descripcion__item .descripcion__item__texto {
+    font-size: var(--textText);
+    padding: var(--spS);
+}
+
+.general{
+    padding: var(--spM);
+}
+
+.general__tabla__resumen__punto__resumen {
+    font-size: var(--textText);
+    color: var(--backgroundDark);
+}
+
+
+.general__tabla__resumen__punto__titulo {
+    font-size: var(--textHeading3456);
+    color: var(--backgroundDark);
+}
+
+.oymText {
+    transition: all ease-out 2s;
+}
+
+.oymText:hover{
+    scale: 0.95;
+}
+.oymImg {
+    transition: all ease-out 2s;
+}
+*/
+.oymImg:hover{
+    scale: 0.95;
+}
+
+.eiaText{
+    transition: all ease-out 2s;
+}
+
+.eiaText:hover{
+    scale: 0.95;
+}
+
+.eiaImg{
+    transition: all ease-out 2s;
+}
+
+.eiaImg:hover{
+    scale: 0.95;
+}
+
+.bimText {
+    transition: all ease-out 2s;   
+}
+
+.bimText:hover{
+    scale: 0.95;
+}
+
+.bimImg {
+    transition: all ease-out 2s;
+}
+
+.bimImg:hover{
+    scale: 0.95;
+}
+
+.pmImg {
+    transition: all ease-out 2s;   
+}
+
+.pmImg:hover{
+    scale: 0.95;
+}
+
+.pmText {
+    transition: all ease-out 2s;
+}
+
+.pmText:hover{
+    scale: 0.95;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--backgroundDark);
+    padding: var(--spXs);
+    text-align: right;
+}
+
+.footerpartition{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footerdiv{
+    padding: var(--spXs);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footermenu{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.footermenu__firma{
+    color: var(--backgroundEmpty)
+}
+
+.footermenu__dir{
+    color: var(--backgroundEmpty)
+}
+
+.title{
+    color: var(--backgroundLight);
+}
+
+.formulario{
+    display: block;
+}
+
+.containerform {
+    border-radius: 10px;
+    background-color: var(--backgroundLight);
+    padding: 100px;
+    color: var(--backgroundEmpty);
+  }
+
+  .boton{
+    background-color: var(--backgroundLive);
+    color: var(--backgroundDark);
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .boxmod {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid var(--backgroundEmpty); 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+.nosotros__title{
+    padding: var(--spS);
+    margin-top: var(--spXs);
+}
+
+.subtitulo{
+    font-size: var(--textLinks);
+    padding: var(--spXs);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px; 
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.gridTitle {
+    font-size: var(--textLinks);
+}
+
+.gridText {
+    font-size: var(--textCaption);
+}
+
+@media screen and (max-width: 950px){
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu__item {
+        flex-direction: column;
+        align-items: center;  
+    }
+    .navbar .menu .menu__link {
+        font-size: var(--textCaption);
+    }
+
+    .galeria {
+        padding: var(--spXs);
+    }
+    .gridTitle {
+        font-size: var(--textHeading7);
+    }
+    
+    .gridText {
+        font-size: var(--textSText);
+    }
+
+    .navbar__link{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    .navbar .menu .menu__link {
+        font-size: var(--textSCaption);
+        margin: 0;
+        padding: var(--spXxs);
+
+    }
+
+    .footermenu__firma{
+        font-size: var(--textSCaption);
+    }
+    
+    .footermenu__dir{
+        font-size: var(--textSText);
+    }
+    }
+
+    @keyframes appear {
+        0%{
+            transform: translateY(-50px);
+            opacity:0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes movimiento {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    .fondoZZero{
+        display: none;
+    }
+
+    .fondoZero{
+        animation: movimiento 6s ease-in-out 0s infinite;
+    }
+
+    .fondoUno{
+        animation: movimiento 10s ease-in-out 0s infinite;
+    }
+
+    .fondoDos{
+        animation: movimiento 6s ease-in-out 0s infinite;
+    }
+
+    .visual{
+        padding: 0;
+    }
+.footermov{
+    padding: 0;
+    transform: translateY(10px);
+}
