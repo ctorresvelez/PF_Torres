@@ -54,6 +54,7 @@ a{
 }
 
 
+
 .navbar{
     background-color: var(--backgroundDark);
     padding: var(--spXs) var(--spXs) 0px var(--spXs);
@@ -145,7 +146,11 @@ a{
 .oymImg {
     transition: all ease-out 2s;
 }
-*/
+
+.galeria{
+    padding-top: 100px;
+}
+
 .oymImg:hover{
     scale: 0.95;
 }
