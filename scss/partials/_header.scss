@@ -1,0 +1,70 @@
+.navbar {
+    background-color: var(--backgroundDark);
+    padding: var(--spXs) var(--spXs) 0px var(--spXs);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__link {
+      animation: appear .5s ease-in-out;
+      padding: 0 0 5px 0;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      .menu_item {
+        display: flex;
+        padding: var(--spXs) var(--spXs) 0px var(--spXs);
+      }
+      .menu__link {
+        color: var(--backgroundEmpty);
+        font-size: var(--textLinks);
+        transition: all 0.4s ease-in-out;
+        margin: var(--spXs);
+        padding: var(--spXs);     
+        animation: appear .5s ease-in-out;
+        &:hover {
+          background-color: var(--backgroundEmpty);
+          color: var(--backgroundDark);
+        }
+      }
+    }
+    .navbar__link {
+      transform: scale(0.8);
+    }
+  }
+
+  @media screen and (max-width: 950px){
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      .menu{
+        &__item {
+          flex-direction: column;
+          align-items: center;  
+        }
+        &__link {
+          font-size: var(--textCaption);
+        }
+      }
+    }
+
+  @media screen and (max-width: 765px){
+
+    .navbar .menu .menu__link {
+        font-size: var(--textText);
+        margin: 0;
+        padding: var(--spXxs);
+    }
+  }
+  @media screen and (max-width: 540px){
+  
+    .navbar .menu .menu__link {
+        font-size: var(--textSCaption);
+        margin: 0;
+        padding: var(--spXxs);
+    }
+  }
+  
+}
