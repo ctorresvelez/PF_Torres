@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 10;
     &__link {
       animation: appear .5s ease-in-out;
       padding: 0 0 5px 0;
@@ -25,6 +26,7 @@
         padding: var(--spXs);     
         animation: appear .5s ease-in-out;
         &:hover {
+          @extend .menu__link;
           background-color: var(--backgroundEmpty);
           color: var(--backgroundDark);
         }
@@ -39,6 +41,7 @@
     .navbar {
       flex-direction: column;
       align-items: center;
+      z-index: 10;
       .menu{
         &__item {
           flex-direction: column;

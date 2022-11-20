@@ -1,3 +1,5 @@
+@import "./formulario";
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -44,30 +46,24 @@
 }
 
 .pointText {
-  transition: all ease-out 2s;
+  @include transitionA();
   &:hover{
     scale: 0.95;
   }
 }
 
 .pointImg {
-  transition: all ease-out 2s;
+  @include transitionA();
   &:hover{
     scale: 0.95;
   }
 }
 
-.galeria{
-    padding-top: 100px;
-}
 
 .title{
     color: var(--backgroundLight);
 }
 
-.formulario{
-    display: block;
-}
 
 .containerform {
     border-radius: 10px;
@@ -76,25 +72,6 @@
     color: var(--backgroundEmpty);
   }
 
-  .boton{
-    background-color: var(--backgroundLive);
-    color: var(--backgroundDark);
-    padding: 12px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .boxmod {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid var(--backgroundEmpty); 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical
-}
 
 .nosotros__title{
     padding: var(--spS);
@@ -143,11 +120,5 @@
         font-size: var(--textSText);
     }
 
-    .containerform{
-        border-radius: 10px;
-        background-color: var(--backgroundLight);
-        padding: 50px;
-        color: var(--backgroundEmpty);        
-    }
 }
 

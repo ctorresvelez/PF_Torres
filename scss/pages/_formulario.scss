@@ -1,0 +1,62 @@
+@mixin transitionA {
+    transition: all ease-out 2s;
+  }
+  
+  @mixin boton {
+    background-color: var(--backgroundLive);
+    color: var(--backgroundDark);
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+  }
+
+  
+  .formulario{
+      display: block;
+  }
+  
+  .containerform {
+      border-radius: 10px;
+      background-color: var(--backgroundLight);
+      padding: 100px;
+      color: var(--backgroundEmpty);
+    }
+  
+    .boton{
+      @include boton();
+    }
+  
+    .boxmod {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid var(--backgroundEmpty); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+  
+
+  
+  .map{
+    height:463px
+  }
+  
+  @media screen and (max-width: 950px){
+  
+  
+      .galeria {
+          padding: var(--spXs);
+      }
+  
+      .containerform{
+          border-radius: 10px;
+          background-color: var(--backgroundLight);
+          padding: 50px;
+          color: var(--backgroundEmpty);        
+      }
+  }
+  
+  
